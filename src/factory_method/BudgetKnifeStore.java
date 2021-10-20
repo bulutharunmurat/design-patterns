@@ -4,9 +4,9 @@ public class BudgetKnifeStore extends KnifeStore{
 
     @Override
     Knife createKnife(String knifeType) {
-        if (knifeType.equals("steak")) {
+        if (knifeType.equals("BudgetSteakKnife")) {
             return new BudgetSteakKnife();
-        } else if (knifeType.equals("chefs")) {
+        } else if (knifeType.equals("BudgetChefsKnife")) {
             return new BudgetChefsKnife();
         }
         //.. more types

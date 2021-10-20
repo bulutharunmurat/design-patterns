@@ -1,8 +1,6 @@
 package factory;
 
 public class Knife {
-
-
     public void sharpen(){
         System.out.println("sharpen method called");
     }
