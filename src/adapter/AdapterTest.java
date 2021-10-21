@@ -7,6 +7,7 @@ public class AdapterTest {
         WebAdapter adapter = new WebAdapter();
         adapter.connect(service);
         WebClient client = new WebClient(adapter);
+        // client dont know anythink about adaptee
         client.doWork();
     }
 }
