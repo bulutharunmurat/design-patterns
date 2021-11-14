@@ -2,7 +2,7 @@ package builder;
 
 public interface HousePlan {
 
-    public void setBasement(String basement);
-    public void setStructure(String structure);
-    public void setRoof(String roof);
+    void setBasement(String basement);
+    void setStructure(String structure);
+    void setRoof(String roof);
 }

@@ -10,5 +10,7 @@ public class FacadeTest {
         Investment accountB = (Investment) bankService.createNewAccount("investment", BigDecimal.valueOf(500));
 
         bankService.transferMoney(1,0,BigDecimal.valueOf(25));
+        System.out.println(accountA.getInitAmount());
+        System.out.println(accountB.getInitAmount());
     }
 }
