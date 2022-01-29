@@ -12,4 +12,5 @@ public class stateDemo {
         System.out.println(vendingMachine.getCurrentState());
 
     }
+
 }
