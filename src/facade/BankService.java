@@ -33,6 +33,9 @@ public class BankService {
     public void transferMoney(int to, int from, BigDecimal amount) {
         IAccount toAccount = this.bankAccounts.get(to);
         IAccount fromAccount = this.bankAccounts.get(from);
+
+        System.out.println("to: " + bankAccounts.get(to));
+        System.out.println("from: " + bankAccounts.get(from));
         fromAccount.transfer(toAccount, amount);
     }
 }
