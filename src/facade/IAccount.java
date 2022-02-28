@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 public interface IAccount {
 
-    public void deposit(BigDecimal amount);
-    public void withdraw(BigDecimal amount);
-    public void transfer(Object account, BigDecimal amount);
-    public int getAccountNumber();
-    public BigDecimal getInitAmount();
+    void deposit(BigDecimal amount);
+    void withdraw(BigDecimal amount);
+    void transfer(IAccount account, BigDecimal amount);
+    int getAccountNumber();
+    BigDecimal getInitAmount();
 
 }

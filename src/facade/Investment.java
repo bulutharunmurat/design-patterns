@@ -12,20 +12,22 @@ public class Investment implements IAccount{
 
     @Override
     public void deposit(BigDecimal amount) {
-
+        this.initAmount = this.initAmount.add(amount);
     }
 
     @Override
     public void withdraw(BigDecimal amount) {
-
+        this.initAmount = this.initAmount.subtract(amount);
     }
 
     @Override
-    public void transfer(Object account, BigDecimal amount) {
+    public void transfer(IAccount account, BigDecimal amount) {
+        this.withdraw(amount);
+        account.deposit(amount);
     }
 
     public BigDecimal getInitAmount() {
-        return initAmount;
+        return this.initAmount;
     }
 
     @Override

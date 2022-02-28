@@ -10,6 +10,7 @@ public class FacadeTest {
         IAccount investment = bankService.createNewAccount("investment", BigDecimal.valueOf(500));
 
         bankService.transferMoney(1,0,BigDecimal.valueOf(25));
+
         System.out.println(savings.getInitAmount());
         System.out.println(investment.getInitAmount());
     }
