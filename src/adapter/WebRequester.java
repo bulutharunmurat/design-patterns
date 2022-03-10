@@ -1,5 +1,5 @@
 package adapter;
 
 public interface WebRequester {
-    public int request(Object object);
+    int request(Object object);
 }

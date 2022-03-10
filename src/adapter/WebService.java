@@ -4,8 +4,7 @@ public class WebService {
     public WebService(String webHost) {
     }
 
-    public Json request(Object result){
-        Json json = new Json();
+    public Json request(Json json){
         return json;
     }
 }
