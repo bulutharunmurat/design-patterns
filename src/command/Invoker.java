@@ -15,5 +15,6 @@ public class Invoker {
         Command pasteCommand2 = new PasteCommand(document, 0, "bulutharun");
         pasteCommand2.execute();
 
+
     }
 }

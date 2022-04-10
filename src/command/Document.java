@@ -8,7 +8,7 @@ public class Document {
     }
 
     public void deleteText(Integer position, Integer textLength) {
-        System.out.println("Position change by" + textLength + " New position is " + position);
+        System.out.println("Position change by " + textLength + " New position is " + position);
     }
 
 }
